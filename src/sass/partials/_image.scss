@@ -1,0 +1,22 @@
+.image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-color: #c3d3e0;
+    background-image: url('@@assetPath@@/assets/bg--700.jpg');
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mq(tablet) {
+        background-image: url('@@assetPath@@/assets/bg--1300.jpg');
+    }
+
+    @include mq(leftCol) {
+        background-image: url('@@assetPath@@/assets/bg--2000.jpg');
+        background-position: center center;
+    } 
+}
